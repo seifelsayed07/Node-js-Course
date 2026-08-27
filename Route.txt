@@ -1,0 +1,6 @@
+JavaScript
+NodeJs
+Express
+Git & Github
+commend prompet
+Sql
