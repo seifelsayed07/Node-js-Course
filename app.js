@@ -21,5 +21,5 @@ let defineYourself = "I am a student at Menofia University"
 console.log(defineYourself)
 let var1 = "Mohamed salah"
 console.log("My favourite player is " + var1)
-let var2 = "Electrical engineering my specialization"
+let var2 = "Electrical engineering"
 console.log("My specialization is " + var2)
