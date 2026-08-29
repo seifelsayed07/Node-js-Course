@@ -37,3 +37,23 @@ console.log(d)
 // ++ mean +1 -- mean -1
 /*new mulit line
 commnt*/
+const myStr = "I am a \"double qouted \"string inside \"douple quotes\""
+console.log(myStr)
+const myStr2 = 'seif said , "Let\'s learn javascript" ahmed responded ,"that\'s good idea"'
+// we use backslash to escape ' in 'text had " is = \'s"'
+console.log(myStr2)
+/* \' , \" , \\
+\n mean new line 
+\t mean tap
+\r mean carriage return
+\b mean word boundry 
+\f mean form feed */
+const myStr3 = 'FirstLine \n\tSecondLine \nThirdLine'
+console.log(myStr3)
+const myStr4 = "FirstWord " + "SecondWord"
+console.log(myStr4)
+// += can be used to string to other
+let myStr5 = "hello, "
+myStr5 += "how are you"
+console.log(myStr5)
+// 12 40
