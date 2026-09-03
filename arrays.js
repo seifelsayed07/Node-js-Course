@@ -1,4 +1,4 @@
-const arrayTest =['string','mahmoud','hamza','number',25,30,'bolean',true,false];
+const arrayTest =['string','mahmoud','hamza','number',25,30,'boolean',true,false];
 console.log(arrayTest);
 console.log(arrayTest.length);
 console.log(`--- Data Types in Arrays ---
@@ -49,3 +49,5 @@ console.log(firstRemovedFromArrayTest4);
 //we use .unshift() to add item to first of array its opposite to .push
 arrayTest4.unshift(['moatez',11]);
 console.log(arrayTest4);
+//we use console.table() to make array more perfect
+console.table(arrayTest1);
