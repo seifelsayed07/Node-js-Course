@@ -22,8 +22,8 @@ Final Amount: ${finalPrice} EGP
 Shopping Cart Challenge*/
 const customerName = "seif elsayed";
 const accountBalance = 5000;
-let shoppingCart = ["Keyboard","Mouse","Headset"];
-let customerRecord =[
+const shoppingCart = ["Keyboard","Mouse","Headset"];
+const customerRecord =[
     customerName,
     accountBalance,
     shoppingCart
@@ -31,8 +31,8 @@ let customerRecord =[
 customerRecord[2].push("Monitor");
 let canceledItem = customerRecord[2].shift();
 let itemsCount = customerRecord[2].length;
-console.log(`customer Name: ${customerName}
-Balance: ${accountBalance} EGP
+console.log(`customer Name: ${customerRecord[0]}
+Balance: ${customerRecord[1]} EGP
 Canceled Item: ${canceledItem}
 Remainig Items In Cart: ${itemsCount}
 `);
