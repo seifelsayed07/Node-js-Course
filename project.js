@@ -36,3 +36,34 @@ Balance: ${customerRecord[1]} EGP
 Canceled Item: ${canceledItem}
 Remainig Items In Cart: ${itemsCount}
 `);
+/*test task
+Order Processor Challenge*/
+function processOrder(product,price,quantity,taxRate){
+const totalBeforeTax = price*quantity;
+const taxValue = totalBeforeTax*taxRate/100;
+const totalAfterTax = totalBeforeTax + taxValue;
+return `Order: ${quantity}x ${product} | Final Total: ${totalAfterTax} EGP`;
+};
+const order1 = processOrder("Monitor",2000,2,10);
+const order2 = processOrder("Headset",500,1,14);
+console.log(order1);
+console.log(order2);
+/*3rd task
+Employee Access System*/
+function checkAccess(employeeName, age, role){
+ if(age < 18){
+    return `Access Denied: ${employeeName} is underage.`;
+ }
+ else if (role === "Admin") {
+    return `Welcome ${employeeName}! You have Full Admin Access.`;
+ }
+ else {
+    return `Welcome ${employeeName}! You have Standard Access.`
+ }
+}
+const emp1 = checkAccess("seif" , 19 , "User");
+const emp2 = checkAccess("Ahmed" , 16 , "User");
+const emp3 = checkAccess("Mahmoud" , 30 , "Admin");
+console.log(emp1);
+console.log(emp2);
+console.log(emp3);
